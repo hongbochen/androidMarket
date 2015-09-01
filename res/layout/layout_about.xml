@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/mgrey" >
+    
+    <RelativeLayout 
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true">
+        
+        <ImageView
+            android:id="@+id/iv_icon"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:layout_centerHorizontal="true"
+            android:background="@drawable/icon"/>
+
+        <TextView
+            android:id="@+id/tv_app_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:text="波波市场"
+            android:textColor="@color/light_grey"
+            android:textSize="18sp"
+            android:layout_below="@id/iv_icon"
+            android:layout_marginTop="3dp"/>
+        
+        <TextView 
+            android:id="@+id/tv_version"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:text="version:2.0.0"
+            android:textSize="15sp"
+            android:layout_marginTop="3dp"
+            android:textColor="@color/light_grey"
+            android:layout_below="@id/tv_app_name"/>
+        
+        <TextView 
+            android:id="@+id/tv_linian"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:text="爱生活，爱安智，我们是极客一组"
+            android:textSize="12sp"
+            android:layout_marginTop="3dp"
+            android:textColor="@color/light_grey"
+            android:layout_below="@id/tv_version"/>
+        
+        <TextView 
+            android:id="@+id/tv_contact"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="3dp"
+            android:text="联系我们:897637468@qq.com"
+            android:textSize="12sp"
+            android:textColor="@color/light_grey"
+            android:layout_below="@id/tv_linian"/>
+        
+        </RelativeLayout>
+
+</RelativeLayout>

@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">波波市场</string>
+    <string name="hello_world">Hello world!</string>
+    <string name="action_settings">Settings</string>
+
+     <string name="tv_search_text">大家都在搜\"RPG\"</string>
+     <string name="tv_name">app名称</string>
+     
+     <string name="test_infor1">推荐理由：\n
+每3个人中就有1个人在使用搜狐新闻了解天下资讯\n 
+每1秒钟就有100万+人与你同时在搜狐新闻阅读新鲜事\n
+每1天就有100+个火爆自媒体入驻搜狐新闻\n
+搜狐新闻客户端致力于打造属于你的个性化新闻客户端。覆盖图文、视频、音频、直播等全媒体内容形态，海量免费独家资源任您阅读。一拉，就能看到你最感兴趣的新闻，通过手势上下拉出你的偏好，为你推荐个人最感兴趣的资讯，你的秘密我都知道。\n</string>
+
+
+<string name="test_infor2">
+     	    【功能特性】\n
+看天下大事 \n
+一看，就能看到时下最热点的报道 \n
+通过依托专业的新闻人才为我推荐当前最具热点的报道。\n
+拉出我的偏好 \n
+一拉，就能看到我最感兴趣的新闻；\n
+通过手势上下拉出我的偏好。\n
+依托强大的智能推荐算法，为我推荐个人最感兴趣的资讯。\n
+划出我的个性\n
+一划，就能看到最符合我口味的刊物；\n
+凭借用户订阅刊物的信息，为我及时更新私人订制的内容。\n
+不只限于刊物，更有十万个性化频道任我添加，享受深度定制专属内容。\n
+【兼容性】\n需要 Android 系统 4.0 或更高版本。\n
+</string>
+
+<string name="test_comment">不知道哪里好玩？就下哪好玩！看看大家在哪玩、怎么玩，马上有灵感！出去玩，拍照很重要，觉得照片没本人好看的，更应该下哪好玩，一秒拍出大长腿！</string>
+</resources>

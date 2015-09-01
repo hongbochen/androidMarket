@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" 
+    android:background="@color/mgrey">
+    
+     <!-- 顶部标题栏 -->
+
+    <RelativeLayout
+        android:id="@+id/rl_diacode_title"
+        android:layout_width="fill_parent"
+        android:layout_height="@dimen/bar_height"
+        android:layout_alignParentTop="true"
+        android:background="@color/mbarcolor" >
+
+        <TextView
+            android:id="@+id/tv_diacode_back"
+            android:layout_width="@dimen/bake_size"
+            android:layout_height="@dimen/bake_size"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="10dp"
+            android:background="@drawable/button_back"
+            android:clickable="true"
+            android:gravity="center" />
+
+        <TextView
+            android:id="@+id/tv_diacode_appName"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true"
+            android:gravity="center"
+            android:text="二维码扫描"
+            android:textColor="@color/white"
+            android:textSize="24sp"
+            android:textStyle="bold" />
+    </RelativeLayout>
+    
+
+</RelativeLayout>

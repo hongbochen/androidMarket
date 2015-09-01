@@ -1,0 +1,126 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingTop="8dp"
+    android:paddingBottom="8dp">
+    
+    <RelativeLayout 
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        
+        <RelativeLayout 
+            android:id="@+id/rl_head_comment"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="8dp"
+            android:layout_marginRight="8dp">
+            
+            <ImageView 
+                android:id="@+id/iv_user_head"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/app_user"/>
+            
+            <RelativeLayout 
+                android:id="@+id/rl_content"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_toRightOf="@id/iv_user_head"
+                android:layout_marginLeft="6dp">
+                
+                 <RelativeLayout 
+                android:id="@+id/rl_content_temp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+            <RelativeLayout 
+                android:id="@+id/rl_user_time"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                >
+                
+                <TextView 
+                    android:id="@+id/tv_user_name"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="匿名用户"
+                    android:textSize="16sp"
+                    android:textColor="#2ed25c"/>
+                
+                <TextView 
+                    android:id="@+id/tv_comment_time"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="2015-07-02"
+                    android:layout_below="@id/tv_user_name"
+                    android:layout_marginTop="2dp"
+                    android:textColor="@color/light_grey"/>
+                
+            </RelativeLayout>
+            
+            <RelativeLayout 
+                android:id="@+id/rl_zan_reply"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_alignParentRight="true">
+                
+                <TextView 
+                    android:id="@+id/tv_zan_count"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="3dp"
+                    android:text="2"
+                    android:textColor="@color/light_grey"/>
+                
+                <ImageView 
+                    android:id="@+id/iv_zan"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_toRightOf="@id/tv_zan_count"
+                    android:background="@drawable/fop"
+                    android:layout_marginLeft="8dp"/>
+                
+                <ImageView 
+                    android:id="@+id/iv_reply"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_toRightOf="@id/iv_zan"
+                    android:background="@drawable/fox"
+                    android:layout_marginTop="1dp"
+                    android:layout_marginLeft="8dp"></ImageView>
+                
+            </RelativeLayout>
+            </RelativeLayout>
+            
+            <RelativeLayout 
+                android:id="@+id/rl_comment_content"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/rl_content_temp"
+                android:layout_marginTop="5dp">
+
+                <TextView
+                    android:id="@+id/tv_comment_content"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:layout_alignParentTop="true"
+                    android:text="@string/test_comment"
+                    android:textColor="@color/black" />
+
+            </RelativeLayout>
+            
+            <LinearLayout 
+                android:id="@+id/ll_reply_back"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/rl_comment_content"
+                android:layout_marginTop="3dp"
+                android:orientation="vertical"
+                android:layout_alignParentRight="true"></LinearLayout>
+            </RelativeLayout>
+        </RelativeLayout>
+    </RelativeLayout>
+
+</RelativeLayout>

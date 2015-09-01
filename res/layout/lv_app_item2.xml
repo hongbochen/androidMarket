@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="5dp"
+    android:paddingTop="5dp" >
+
+    <RelativeLayout
+        android:id="@+id/rl_app_item"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="2dp"
+        android:layout_marginTop="2dp" >
+
+        <!--  
+        <ImageView
+            android:id="@+id/app_image"
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:layout_marginLeft="5dip"
+            android:background="@drawable/icon4" />
+        -->
+        
+         <com.android.volley.toolbox.NetworkImageView
+            android:id="@+id/app_image"
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:layout_marginLeft="5dip"
+            android:src="@drawable/defalt_download_large" ></com.android.volley.toolbox.NetworkImageView>
+
+        <RelativeLayout
+            android:id="@+id/rl_tv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="8dp"
+            android:layout_toRightOf="@id/app_image" >
+
+            <TextView
+                android:id="@+id/tv_app_name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:ellipsize="end"
+                android:singleLine="true"
+                android:text="@string/tv_name"
+                android:textColor="@color/black"
+                android:textSize="20sp" />
+
+            <RelativeLayout
+                android:id="@+id/rl_down_size_progress"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/tv_app_name"
+                android:layout_marginTop="2dp" >
+                
+            <RelativeLayout
+                android:id="@+id/rl_down_size"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+               >
+
+                <TextView
+                    android:id="@+id/tv_down_count"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="6万次下载"
+                    android:textColor="@color/light_grey"
+                    android:textSize="12sp" />
+
+                <TextView
+                    android:id="@+id/tv_app_size"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="8dp"
+                    android:layout_toRightOf="@id/tv_down_count"
+                    android:text="3.62M"
+                    android:textColor="@color/light_grey"
+                    android:textSize="12sp" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/rl_progres_bar"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                 >
+
+                <ProgressBar
+                    android:id="@+id/download_pb"
+                    style="?android:attr/progressBarStyleHorizontal"
+                    android:layout_width="200dp"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:layout_alignParentTop="true"
+                    android:focusable="false"
+                    android:visibility="gone" />
+
+            </RelativeLayout>
+
+            </RelativeLayout>
+            <TextView
+                android:id="@+id/tv_brief"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/rl_down_size_progress"
+                android:layout_marginTop="2dp"
+                android:ellipsize="end"
+                android:singleLine="true"
+                android:text="手游福利平台，更有海量精品游戏奥"
+                android:textColor="@color/light_grey"
+                android:textSize="10sp" >
+            </TextView>
+        </RelativeLayout>
+    </RelativeLayout>
+
+</RelativeLayout>

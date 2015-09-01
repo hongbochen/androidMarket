@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+
+    <RelativeLayout 
+                android:id="@+id/rl_comment"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_alignParentBottom="true">
+                
+         <View
+             android:id="@+id/iv_line"
+             android:layout_width="match_parent"
+             android:layout_height="0.2dp"
+             android:layout_alignParentTop="true"
+             android:background="@color/black"></View>
+         
+         	<Button
+                android:id="@+id/btn_comment"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:layout_centerInParent="true"
+                android:background="@drawable/shape_rectangle_blue"
+                android:layout_marginLeft="3dp"
+                android:layout_marginRight="3dp"
+                android:text="评论"
+                android:textColor="@color/white"/>
+         	</RelativeLayout>
+         	
+    <ListView
+            android:id="@+id/lv_comments"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginBottom="2dp"
+            android:layout_marginTop="4dp"
+            android:background="@drawable/shape_rectangle"
+            android:cacheColorHint="#00000000"
+            android:divider="@drawable/line_bg_blue"
+            android:dividerHeight="1.0dp"
+            android:fadingEdge="vertical"
+            android:layout_above="@id/rl_comment"
+            android:listSelector="@drawable/listview_item_bg"
+            android:scrollbarStyle="outsideOverlay" >
+        </ListView>
+
+</RelativeLayout>

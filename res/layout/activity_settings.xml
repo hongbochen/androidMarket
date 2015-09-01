@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" 
+    android:background="@color/mgrey">
+    
+     <RelativeLayout
+        android:id="@+id/rl_setting_title"
+        android:layout_width="fill_parent"
+        android:layout_height="@dimen/bar_height"
+        android:layout_alignParentTop="true"
+        android:background="@color/mbarcolor" >
+
+        <TextView
+            android:id="@+id/tv_setting_back"
+            android:layout_width="@dimen/bake_size"
+            android:layout_height="@dimen/bake_size"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="10dp"
+            android:background="@drawable/button_back"
+            android:clickable="true"
+            android:gravity="center" />
+
+        <TextView
+            android:id="@+id/tv_setting_appName"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true"
+            android:gravity="center"
+            android:text="设置"
+            android:textColor="@color/white"
+            android:textSize="24sp"
+            android:textStyle="bold" />
+    </RelativeLayout>
+    
+     <RelativeLayout 
+         android:id="@+id/setting_item"
+         android:layout_width="match_parent"
+         android:layout_height="match_parent"
+         android:layout_below="@id/rl_setting_title"
+         android:layout_marginTop="4dp"
+         android:layout_marginLeft="4dp"
+         android:layout_marginRight="4dp">
+         
+         <Button
+                android:id="@+id/btn_clear"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:background="@drawable/shape_rectangle_blue"
+                android:layout_marginLeft="3dp"
+                android:layout_marginRight="3dp"
+                android:text="清除缓存"
+                android:textColor="@color/white"/>
+         
+     </RelativeLayout>
+    
+
+</RelativeLayout>

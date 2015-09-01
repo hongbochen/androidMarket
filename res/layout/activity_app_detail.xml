@@ -1,0 +1,156 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/mgrey" >
+
+    <!-- 顶部标题栏 -->
+
+    <RelativeLayout
+        android:id="@+id/rl_app_detail_title"
+        android:layout_width="fill_parent"
+        android:layout_height="@dimen/bar_height"
+        android:layout_alignParentTop="true"
+        android:background="@color/mbarcolor" >
+
+        <TextView
+            android:id="@+id/tv_app_detail_back"
+            android:layout_width="@dimen/bake_size"
+            android:layout_height="@dimen/bake_size"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="10dp"
+            android:background="@drawable/button_back"
+            android:clickable="true"
+            android:gravity="center" />
+
+        <TextView
+            android:id="@+id/tv_app_detail_appName"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true"
+            android:gravity="center"
+            android:text="详情"
+            android:textColor="@color/white"
+            android:textSize="24sp"
+            android:textStyle="bold" />
+    </RelativeLayout>
+
+
+            <RelativeLayout
+                android:id="@+id/rl_general"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/rl_app_detail_title"
+                android:background="@color/mbarcolor" >
+
+                <com.android.volley.toolbox.NetworkImageView
+                    android:id="@+id/iv_app_icon"
+                    android:layout_width="60dp"
+                    android:layout_height="60dp"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginTop="5dp"
+                    android:src="@drawable/icon4" />
+
+                <RelativeLayout
+                    android:id="@+id/rl_tv_detail"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="5dip"
+                    android:layout_marginTop="5dp"
+                    android:layout_toRightOf="@+id/iv_app_icon" >
+
+                    <TextView
+                        android:id="@+id/tv_app_name"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:singleLine="true"
+                        android:text="酷我音乐"
+                        android:textColor="@color/white"
+                        android:textSize="18sp" />
+
+                    <LinearLayout
+                        android:id="@+id/ll_rank"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@id/tv_app_name"
+                        android:layout_marginTop="3dp"
+                        android:orientation="horizontal" >
+
+                        <ImageView
+                            android:layout_width="15dp"
+                            android:layout_height="15dp"
+                            android:background="@drawable/star_on" />
+
+                        <ImageView
+                            android:layout_width="15dp"
+                            android:layout_height="15dp"
+                            android:background="@drawable/star_on" />
+
+                        <ImageView
+                            android:layout_width="15dp"
+                            android:layout_height="15dp"
+                            android:background="@drawable/star_on" />
+
+                        <ImageView
+                            android:layout_width="15dp"
+                            android:layout_height="15dp"
+                            android:background="@drawable/star_on" />
+
+                        <ImageView
+                            android:layout_width="15dp"
+                            android:layout_height="15dp"
+                            android:background="@drawable/star_off" />
+                    </LinearLayout>
+
+                    <RelativeLayout
+                        android:id="@+id/rl_down_size"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@id/ll_rank"
+                        android:layout_marginTop="3dp" >
+
+                        <TextView
+                            android:id="@+id/tv_app_size"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="18.92M"
+                            android:textColor="@color/white"
+                            android:textSize="12sp" >
+                        </TextView>
+
+                        <TextView
+                            android:id="@+id/tv_down_count"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="8dp"
+                            android:layout_toRightOf="@id/tv_app_size"
+                            android:text="57288次下载"
+                            android:textColor="@color/white"
+                            android:textSize="12sp" />
+                    </RelativeLayout>
+                </RelativeLayout>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_below="@id/iv_app_icon"
+                    android:layout_marginTop="5dp" />
+            </RelativeLayout>
+
+            
+             <android.support.v4.view.ViewPager
+        android:id="@+id/viewpager"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/rl_general">
+ 
+        <android.support.v4.view.PagerTabStrip
+            android:id="@+id/tabstrip"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center" />
+    </android.support.v4.view.ViewPager>
+
+
+</RelativeLayout>

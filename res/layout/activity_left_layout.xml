@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/mgrey" >
+
+    <RelativeLayout 
+         android:id="@+id/rl_header"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/mbarcolor">
+    <RelativeLayout 
+       
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:paddingBottom="10dp"
+        >
+        
+        <ImageView
+            android:id="@+id/iv_left_user_head"
+            android:layout_width="45dp"
+            android:layout_height="45dp"
+            android:background="@drawable/contact"></ImageView>
+        <TextView 
+            android:id="@+id/tv_left_user_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_toRightOf="@id/iv_left_user_head"
+            android:text="走向正无穷"
+            android:textColor="@color/white"
+            android:textSize="16sp"
+            android:layout_marginLeft="10dp"/>
+        
+        <ImageView 
+            android:id="@+id/iv_left_right"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_alignParentRight="true"
+            android:background="@drawable/arrow_right"
+            android:layout_centerVertical="true"/>
+        
+    </RelativeLayout>
+    </RelativeLayout>
+    
+    <RelativeLayout
+        android:id="@+id/rl_left_main"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/rl_header" >
+
+        <ListView
+            android:id="@+id/lv_left_setting"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+           
+            android:background="@drawable/shape_rectangle"
+            android:cacheColorHint="#00000000"
+            android:divider="@drawable/line_bg_blue"
+            android:dividerHeight="1.0dp"
+            android:fadingEdge="vertical"
+            android:listSelector="@drawable/listview_item_bg"
+            android:scrollbarStyle="outsideOverlay" >
+        </ListView>
+        
+    </RelativeLayout>
+
+</RelativeLayout>

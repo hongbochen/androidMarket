@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="fill_parent"
+        android:layout_height="match_parent">
+        
+    <RelativeLayout
+        android:id="@+id/rl_sort_title"
+        android:layout_width="fill_parent"
+        android:layout_height="@dimen/bar_height"
+        android:layout_alignParentTop="true"
+        android:background="@color/mbarcolor" >
+
+        <TextView
+            android:id="@+id/tv_sort_appName"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true"
+            android:gravity="center"
+            android:text="分类"
+            android:textColor="@color/white"
+            android:textSize="24sp" />
+    </RelativeLayout>
+    
+    <View
+        android:id="@+id/v_line"
+        android:layout_width="match_parent"
+        android:layout_height="0.6dp"
+        android:layout_alignParentBottom="true"
+        android:background="@color/grey" />
+    
+    <LinearLayout 
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" 
+    android:layout_below="@id/rl_sort_title"
+    android:layout_above="@id/v_line">  
+        
+    <GridView
+        android:id = "@+id/gv_game"
+        android:background="@color/white"
+        android:layout_width = "fill_parent"
+        android:layout_height = "fill_parent"
+        android:scrollbars = "none"
+        android:numColumns = "3"
+        android:horizontalSpacing = "1dp"
+        android:verticalSpacing="1dp"
+        android:layout_marginLeft="0dp"
+        android:layout_marginRight= "0dp"
+        >
+    </GridView>
+	</LinearLayout>
+ </RelativeLayout>

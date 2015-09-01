@@ -1,0 +1,127 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/mgrey" >
+
+    <RelativeLayout
+        android:id="@+id/rl_head"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/mbarcolor" >
+
+        <RelativeLayout
+            android:id="@+id/rl_in_head"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_margin="5dip" >
+
+            <TextView
+                android:id="@+id/tv_contact"
+                android:layout_width="40dip"
+                android:layout_height="40dp"
+                android:background="@drawable/contact_press"
+                android:clickable="true" />
+
+            <RelativeLayout
+                android:id="@+id/rl_search"
+                android:layout_width="match_parent"
+                android:layout_height="40dip"
+                android:layout_marginLeft="8dp"
+                android:layout_toRightOf="@id/tv_contact"
+                android:background="@drawable/shape_rectangle" >
+
+                <ImageView
+                    android:id="@+id/iv_search"
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    android:layout_centerVertical="true"
+                    android:background="@drawable/search" />
+
+                <TextView
+                    android:id="@+id/tv_search"
+                    android:layout_width="wrap_content"
+                    android:layout_height="30dp"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="5dp"
+                    android:layout_toRightOf="@id/iv_search"
+                    android:gravity="center_vertical"
+                    android:text="@string/tv_search_text"
+                    android:textColor="@color/lightgrey"
+                    android:textSize="20sp" />
+
+                <ImageView
+                    android:id="@+id/iv_dia"
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    android:layout_alignParentRight="true"
+                    android:layout_marginRight="5dp"
+                    android:background="@drawable/diecode" />
+            </RelativeLayout>
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/rl_blank"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/rl_in_head" >
+        </RelativeLayout>
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/rl_advers"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/rl_head" >
+
+    
+        <com.sdu.ui.AdGallery
+            android:id="@+id/app_advers"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+        <LinearLayout
+            android:id="@+id/ovalLayout"
+            android:layout_width="match_parent"
+            android:layout_height="10dip"
+            android:layout_below="@id/app_advers"
+            android:background="#FFFFFF"
+            android:gravity="center"
+            android:orientation="horizontal" >
+        </LinearLayout>
+ 
+    </RelativeLayout>
+
+    <View
+        android:id="@+id/v_line"
+        android:layout_width="match_parent"
+        android:layout_height="0.6dp"
+        android:layout_alignParentBottom="true"
+        android:background="@color/grey" />
+    
+   
+ <RelativeLayout
+        android:id="@+id/rl_apps"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/rl_advers"
+        android:layout_above="@id/v_line" >
+
+        <ListView
+            android:id="@+id/lv_apps"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="4dp"
+            android:background="@drawable/shape_rectangle"
+            android:cacheColorHint="#00000000"
+            android:divider="@drawable/line_bg_blue"
+            android:dividerHeight="1.0dp"
+            android:fadingEdge="vertical"
+            android:listSelector="@drawable/listview_item_bg"
+            android:scrollbarStyle="outsideOverlay" >
+        </ListView>
+    </RelativeLayout>
+    
+
+</RelativeLayout>

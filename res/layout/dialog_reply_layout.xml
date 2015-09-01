@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white" 
+    android:padding="5dp">
+
+    <RelativeLayout
+        android:id="@+id/relativeLayout1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" >
+
+        <TextView
+            android:id="@+id/tv_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="10dp"
+            android:text="回复评论"
+            android:textColor="@color/name_color"
+            android:textSize="18sp" />
+
+        <EditText
+            android:id="@+id/et_text_reply"
+            android:layout_height="150dp"
+            android:layout_width="wrap_content"
+            android:layout_below="@id/tv_title"
+            android:layout_marginTop="10dp"
+            android:layout_marginLeft="5dp"
+            android:layout_marginRight="5dp"
+            android:layout_centerHorizontal="true"
+            android:background="@drawable/shape_rectangle" 
+            android:ems="13"
+            android:inputType="textMultiLine">
+        </EditText>
+        
+        <Button 
+            android:id="@+id/btn_commit"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/et_text_reply"
+            android:text="提交"
+            android:textSize="20dp"
+            android:textColor="@color/white"
+            android:layout_marginTop="10dp"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="15dp"
+            android:background="@color/name_color"/>
+        
+    </RelativeLayout>
+
+    
+
+</RelativeLayout>

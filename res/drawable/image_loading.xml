@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<animation-list xmlns:android="http://schemas.android.com/apk/res/android" >
+     <item android:drawable="@drawable/image_splash" android:duration="100"/>  
+    <item android:drawable="@drawable/image_splash01" android:duration="100"/>  
+    <item android:drawable="@drawable/image_splash02" android:duration="100"/>  
+    <item android:drawable="@drawable/image_splash03" android:duration="100"/>  
+    <item android:drawable="@drawable/image_splash04" android:duration="100"/>  
+    <item android:drawable="@drawable/image_splash05" android:duration="100"/>  
+    <item android:drawable="@drawable/image_splash06" android:duration="100"/>  
+    <item android:drawable="@drawable/image_splash07" android:duration="100"/> 
+     <item android:drawable="@drawable/image_splash08" android:duration="100"/>  
+    <item android:drawable="@drawable/image_splash09" android:duration="100"/>  
+    <item android:drawable="@drawable/image_splash10" android:duration="100"/>  
+   	
+
+</animation-list>

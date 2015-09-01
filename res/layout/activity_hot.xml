@@ -1,0 +1,220 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" 
+    android:background="@color/white">
+
+    <!-- 顶部标题栏 -->
+
+    <RelativeLayout
+        android:id="@+id/rl_hotapp_title"
+        android:layout_width="fill_parent"
+        android:layout_height="@dimen/bar_height"
+        android:layout_alignParentTop="true"
+        android:background="@color/mbarcolor" >
+
+        <TextView
+            android:id="@+id/tv_hotapp_appName"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true"
+            android:gravity="center"
+            android:text="热门应用"
+            android:textColor="@color/white"
+            android:textSize="24sp" />
+    </RelativeLayout>
+
+    <View
+        android:id="@+id/v_line"
+        android:layout_width="match_parent"
+        android:layout_height="0.6dp"
+        android:layout_alignParentBottom="true"
+        android:background="@color/grey" />
+    
+    <ScrollView
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_below="@+id/rl_hotapp_title"
+        android:fadingEdge="vertical"
+        android:scrollbars="vertical"
+        android:layout_above="@id/v_line" >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_below="@+id/rl_hotapp_title"
+            android:orientation="vertical" >
+
+            <TextView
+                android:id="@+id/hotapp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="热搜榜单"
+                android:layout_marginBottom="5dp"
+                android:layout_marginTop="5dp"
+                android:textColor="@color/steelblue"
+                android:textSize="19sp" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="0.6dp"
+                android:background="@color/grey" />
+
+            <LinearLayout
+                android:id="@+id/hotlist"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical" >
+            </LinearLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="0.6dp"
+                android:background="@color/grey" />
+
+            <TextView
+                android:id="@+id/loadmorehotapp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="5dp"
+                android:gravity="center"
+                android:text="加载更多"
+                android:textColor="@color/skyblue"
+                android:textSize="16sp" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="0.6dp"
+                android:background="@color/grey" />
+
+            <TextView
+                android:id="@+id/hotnewapp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="人气新秀榜"
+                android:layout_marginBottom="5dp"
+                android:layout_marginTop="5dp"
+                android:textColor="@color/steelblue"
+                android:textSize="19sp" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="0.6dp"
+                android:background="@color/grey" />
+
+            <LinearLayout
+                android:id="@+id/hot_newlist"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical" >
+            </LinearLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="0.6dp"
+                android:background="@color/grey" />
+
+            <TextView
+                android:id="@+id/loadmorehotnewapp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:text="加载更多"
+                android:layout_margin="5dp"
+                android:textColor="@color/skyblue"
+                android:textSize="16sp" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="0.6dp"
+                android:background="@color/grey" />
+
+            <TextView
+                android:id="@+id/weeklyhotapp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="周应用金榜"
+                android:layout_marginBottom="5dp"
+                android:layout_marginTop="5dp"
+                android:textColor="@color/steelblue"
+                android:textSize="19sp" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="0.6dp"
+                android:background="@color/grey" />
+
+            <LinearLayout
+                android:id="@+id/hot_weeklylist"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical" >
+            </LinearLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="0.6dp"
+                android:background="@color/grey" />
+
+            <TextView
+                android:id="@+id/loadmoreweeklyhotapp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:text="加载更多"
+                android:textColor="@color/skyblue"
+                android:layout_margin="5dp"
+                android:textSize="16sp" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="0.6dp"
+                android:background="@color/grey" />
+
+            <TextView
+                android:id="@+id/hotweeklygame"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="周游戏金榜"
+                android:layout_marginBottom="5dp"
+                android:layout_marginTop="5dp"
+                android:textColor="@color/steelblue"
+                android:textSize="19sp" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="0.6dp"
+                android:background="@color/grey" />
+
+            <LinearLayout
+                android:id="@+id/hot_gamelist"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical" >
+            </LinearLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="0.6dp"
+                android:background="@color/grey" />
+
+            <TextView
+                android:id="@+id/loadmorehotweeklygame"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:text="加载更多"
+                android:textColor="@color/skyblue"
+                android:layout_margin="5dp"
+                android:textSize="16sp" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="0.6dp"
+                android:background="@color/grey" />
+        </LinearLayout>
+    </ScrollView>
+
+</RelativeLayout>

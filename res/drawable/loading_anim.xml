@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<animation-list xmlns:android="http://schemas.android.com/apk/res/android" >
+     <item android:drawable="@drawable/progress_bar_default_0" android:duration="100"/>  
+    <item android:drawable="@drawable/progress_bar_default_1" android:duration="100"/>  
+    <item android:drawable="@drawable/progress_bar_default_2" android:duration="100"/>  
+    <item android:drawable="@drawable/progress_bar_default_3" android:duration="100"/>  
+    <item android:drawable="@drawable/progress_bar_default_4" android:duration="100"/>  
+    <item android:drawable="@drawable/progress_bar_default_5" android:duration="100"/>  
+    <item android:drawable="@drawable/progress_bar_default_6" android:duration="100"/>  
+    <item android:drawable="@drawable/progress_bar_default_7" android:duration="100"/> 
+     <item android:drawable="@drawable/progress_bar_default_8" android:duration="100"/>  
+    <item android:drawable="@drawable/progress_bar_default_9" android:duration="100"/>  
+    <item android:drawable="@drawable/progress_bar_default_10" android:duration="100"/>  
+    <item android:drawable="@drawable/progress_bar_default_11" android:duration="100"/>  
+    <item android:drawable="@drawable/progress_bar_default_12" android:duration="100"/>  
+    <item android:drawable="@drawable/progress_bar_default_13" android:duration="100"/>  
+    <item android:drawable="@drawable/progress_bar_default_14" android:duration="100"/>  
+    <item android:drawable="@drawable/progress_bar_default_15" android:duration="100"/>   
+
+</animation-list>

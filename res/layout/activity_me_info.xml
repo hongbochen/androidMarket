@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="utf-8"?><RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/mgrey" >
+
+    <!-- 顶部标题栏 -->
+
+    <RelativeLayout
+        android:id="@+id/rl_me_title"
+        android:layout_width="fill_parent"
+        android:layout_height="@dimen/bar_height"
+        android:layout_alignParentTop="true"
+        android:background="@color/mbarcolor" >
+
+        <TextView
+            android:id="@+id/tv_me_back"
+            android:layout_width="@dimen/bake_size"
+            android:layout_height="@dimen/bake_size"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="10dp"
+            android:background="@drawable/button_back"
+            android:clickable="true"
+            android:gravity="center" />
+
+        <TextView
+            android:id="@+id/tv_me_appName"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true"
+            android:gravity="center"
+            android:text="个人主页"
+            android:textColor="@color/white"
+            android:textSize="24sp"
+            android:textStyle="bold" />
+    </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/rl_user_head_name"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/rl_me_title"
+                android:background="@color/mbarcolor" >
+
+                <RelativeLayout
+                    android:id="@+id/rl_user_big_head"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:padding="10dp" >
+
+                    <ImageView
+                        android:id="@+id/iv_user_big_head"
+                        android:layout_width="80dp"
+                        android:layout_height="80dp"
+                        android:layout_centerHorizontal="true"
+                        android:background="@drawable/contact" >
+                    </ImageView>
+
+                    <TextView
+                        android:id="@+id/tv_user_big_name"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@id/iv_user_big_head"
+                        android:layout_centerHorizontal="true"
+                        android:layout_marginTop="10dp"
+                        android:text="走向正无穷"
+                        android:textColor="@color/white"
+                        android:textSize="24sp"
+                        android:textStyle="bold" />
+                </RelativeLayout>
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/rl_user_content"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/rl_user_head_name"
+                >
+
+                <ExpandableListView
+                    android:id="@+id/aboutMeListView"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/shape_rectangle"
+                    android:cacheColorHint="#ffffff"
+                    android:childDivider="@drawable/line_bg_blue"
+                    android:divider="#b9cecece"
+                    android:dividerHeight="1.0dp"
+                    android:fadingEdge="vertical"
+                    android:listSelector="@drawable/listview_item_bg" >
+
+                    <!-- android:groupIndicator="@drawable/expandablelistviewselector" -->
+                </ExpandableListView>
+            </RelativeLayout>
+
+
+</RelativeLayout>
